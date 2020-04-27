@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - survey_form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Students Interest</h1><h2>Survey Form</h2>
+    <p id="description" class="description text-center">
+      You can fill this form to choose your interested course
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Department</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Electronics a nd Communication</option>
+        <option value="job">computer science</option>
+        <option value="learner">civil</option>
+        <option value="preferNo">electrinal and electronics</option>
+        <option value="other">mechanical</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Semester</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="s1/s2"
+          type="radio"
+          class="input-radio"
+          checked
+        />S1/S2</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="s3/s4"
+          type="radio"
+          class="input-radio"
+        />S3/S4</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="s5/s6"
+          type="radio"
+          class="input-radio"
+        />S5/S6</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="s7/s8"
+          type="radio"
+          class="input-radio"
+        />S7/S8</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your area of interest?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="webdevelopment">web development</option>
+        <option value="appdelevopment">app development</option>
+        <option value="contentwritting">Content writting</option>
+        <option value="postermaking">poster making</option>
+        <option value="gamedevelopment">game development</option>
+        <option value="other">other</option>
+        
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Front-end Projects</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Back-end Projects</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Data Visualization</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Challenges</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Open Source Community</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Gitter help rooms</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Videos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />City Meetups</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Wiki</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Forum</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Courses</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
